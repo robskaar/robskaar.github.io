@@ -1,5 +1,6 @@
 {
   "name": "robertskaarwebpage",
+  "homepage": "https://robertskaar.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
