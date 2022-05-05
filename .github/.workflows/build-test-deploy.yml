@@ -19,7 +19,7 @@ jobs:
         git config --global user.name 'Robert Skaar'
         git config --global user.email 'rhskaar@gmail.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        npm run build # The build command of your project
+        npm run build 
         
     - name: Test
       run: npm run test
