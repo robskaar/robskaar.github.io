@@ -20,14 +20,14 @@
   --border_clr_on_secondary: firebrick;
   --border_clr_on_tertiary: beige;
   --border_clr_on_quartinary: lightblue;
-  --border_radius_primary: 2px;
-  --border_radius_secondary: 4px;
-  --border_radius_tertiary: 10px;
-  --border_radius_quartinary: 20px;
+  --border_radius_small: 2px;
+  --border_radius_medium: 4px;
+  --border_radius_large: 10px;
+  --border_radius_xlarge: 20px;
 
   /*Font styles*/
   --font_clr_on_primary: var(--clr_secondary);
-  --font_clr_on_secondary: var(--clr_secondary);
+  --font_clr_on_secondary: var(--clr-primary);
   --font_clr_on_tertiary: #0b1516;
   --font_clr_on_disabled: var(--clr_effect_transparency_default);
 
@@ -59,7 +59,16 @@
   }
   @media (prefers-reduced-motion: no-preference) {
     .spin {
+      animation: spin-360 infinite 3s linear;
+    }
+    .spin-slow {
       animation: spin-360 infinite 20s linear;
+    }
+    .spin-quick {
+      animation: spin-360 infinite 1s linear;
+    }
+    .wave {
+      animation: wave infinite 2.5s
     }
   }
   /*breakpoints*/
@@ -92,7 +101,16 @@
       transform: rotate(360deg);
     }
   }
+  @keyframes wave {
+    from {
+      transform: rotate(-40deg);
+    }
+    to {
+      transform: rotate(40deg);
+    }
+  }
 }
+
 
 body {
   margin: 0;
@@ -110,9 +128,4 @@ body,
   height: 100%;
   background-color: var(--clr_primary);
   color: var(--font_clr_on_primary);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Landing from './Pages/Landing/Landing';
+import IndexPage from './Pages/IndexPage/IndexPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Landing />
+    <IndexPage />
   </React.StrictMode>
 );
 
