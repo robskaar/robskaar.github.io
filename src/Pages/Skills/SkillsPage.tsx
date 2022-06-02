@@ -1,6 +1,6 @@
-import FooterMenu from "../../Components/Navigation/FooterMenu/FooterMenu";
-import HeaderMenu from "../../Components/Navigation/HeaderMenu/HeaderMenu";
-import PageWrapper from "../../Components/Page/PageWrapper";
+import FooterMenu from "../../Common/Components/Navigation/FooterMenu/FooterMenu";
+import HeaderMenu from "../../Common/Components/Navigation/HeaderMenu/HeaderMenu";
+import PageWrapper from "../../Common/Components/Page/PageWrapper";
 import styles from "./SkillsPage.module.css";
 export default function SkillsPage() {
   return (
