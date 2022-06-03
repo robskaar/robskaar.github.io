@@ -1,13 +1,19 @@
 import styles from "./HeaderMenu.module.css";
-import HeaderIcon from "../../../Assets/HeaderIcon";
-export default function HeaderMenu() {
+
+interface HeaderMenuProps{
+  icon?:JSX.Element
+}
+
+export default function HeaderMenu(props:HeaderMenuProps) {
   return (
     <header>
       <ul className={styles.headerlist}>
         <div className={styles.iconwrapper}>
-          <HeaderIcon />
+        {props.icon}
         </div>
-        <li>Speakings</li>
+        
+        <li>Skills</li>
+        <li>Activities</li>
         <li>Contact</li>
       </ul>
     </header>

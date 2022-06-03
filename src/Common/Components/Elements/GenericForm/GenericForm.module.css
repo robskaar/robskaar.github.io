@@ -1,0 +1,109 @@
+.genericForm{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+}
+.formWrapper{
+    display: grid;
+    align-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.genericForm input,select{
+    text-overflow: ellipsis;
+    border: 1px solid var( --color_seperator-dark);
+    border-radius: 2px;
+    text-indent: 10px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 16px;
+}
+.genericForm input:focus, select:focus{
+    box-shadow: 0 0 0 1px rgba(21, 156, 228, 0.4);
+    outline: none;
+}
+.genericForm label{
+  user-select: none;
+    padding-left: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var( --color_button_txt-on-light);
+    text-align: start;
+}
+
+.formDivider {
+    user-select: none;
+    color: var(--color_contentlink-main);
+    grid-column: 1 / -1;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    text-indent: 10px;
+    font-size: var(  --font-size_Sub-header);
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 15px;
+    color: var(  --color_button_txt-on-light);
+    border-bottom: 1px solid var(--color_seperator-light);
+}
+
+.formDivider:before,
+.formDivider:after {
+    background-color: var(--color_seperator-dark);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.formFooter{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+  padding-top: 16px;
+  border-top: 1px solid var(--color_seperator-dark);
+  margin-top: 16px;
+}
+
+.formButton i{
+    display: flex !important;
+    gap: 5px;
+    }
+  
+    .formButton{
+      padding: 5px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      border-collapse: collapse;
+      outline: 0;
+      font-size: 18px;
+      transition-duration: 0.25s;
+    }
+  
+  .cancelformButton{
+  
+   background-color: var(--white);
+   border: 1px solid var(--color_button_txt-on-light);
+   color: var(--color_button_txt-on-light);
+  }
+  .cancelformButton:hover{
+    background-color:var(--light);
+  }
+  
+  
+  
+  .confirmformButton{
+    background-color: var(--color__background-main);
+    border: 1px solid var(--color__background-main);
+    color: var(--white);
+  }
+  
+  .confirmformButton:hover{
+    background-color: var(--color_button_main-hover);
+  }

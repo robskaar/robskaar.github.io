@@ -1,0 +1,76 @@
+.sectionContainer {
+    user-select: none;
+    grid-column: 1 / -1;
+    height: -webkit-fill-available
+  }
+  
+  .sectionContainer>.sectionHeader .sectionHeaderIcon {
+    width: 24px;
+    height: 24px;
+    transition: all 0s;
+    margin-left: auto;
+    display: grid;
+    align-content: center;
+    margin-top: 13px;
+  }
+  
+  .sectionContainer[open] .sectionHeader .sectionHeaderIcon {
+    transform: rotate(180deg);
+  }
+  
+  .sectionHeader {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .sectionHeader::-webkit-details-marker {
+    display: none;
+  }
+
+  .sectionContent{
+    
+display: grid;
+grid-template-columns: max-content auto;
+align-items: center;
+grid-row-gap: 10px;
+grid-column-gap: 30px;
+  }
+
+
+
+  .formDivider {
+    user-select: none;
+
+    color: var(--color_contentlink-main);
+    grid-column: 1 / -1;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size_Header4);
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.formDivider:before,
+.formDivider:after {
+    background-color: var(--color_seperator-light);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.formDivider:before {
+    right: 0.5em;
+    width: 30px;
+}
+
+.formDivider:after {
+    left: 0.5em;
+    width: 100%;
+}
