@@ -3,7 +3,10 @@ import React from "react";
 function FormInput<entityType>(props: {
   value?: any;
   selectOptions: [string, [string]];
-  propertyConfig?:{ignored?:(keyof entityType)[], required?:(keyof entityType)[]}
+  propertyConfig?: {
+    ignored?: (keyof entityType)[];
+    required?: (keyof entityType)[];
+  };
   property: string;
   type: string;
   initialValues: any;
