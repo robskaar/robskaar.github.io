@@ -3,6 +3,7 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import styles from "./main.module.css";
 import IndexPage from "./Pages/IndexPage/IndexPage";
 export default function Main() {
+  console.log("TEST")
   return (
     <HashRouter>
       <div>
@@ -25,13 +26,13 @@ export default function Main() {
             </li>
           </ul>
         </header>
+        
         <main>
-          <Route path="/" children={IndexPage()} />
+          <Route  path="*" children={IndexPage()} />
           <Route path="/skills" children={<div>skills</div>} />
           <Route path="/activity" children={<div>activity</div>} />
           <Route path="/contact" children={<div>contact</div>} />
         </main>
-        <footer>all rights reserved Robert Skaar</footer>
       </div>
     </HashRouter>
   );
