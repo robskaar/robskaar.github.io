@@ -1,5 +1,5 @@
 import styles from "./IndexPage.module.css";
-import GenericForm from "../../Common/Components/Elements/GenericForm/GenericForm";
+/* import GenericForm from "../../Common/Components/Elements/GenericForm/GenericForm";
 
 interface TestType {
   name: string;
@@ -13,7 +13,7 @@ interface TestType {
     dogs: number;
     subsub: { sublevel: boolean };
   };
-}
+} */
 
 export default function IndexPage() {
   return (
