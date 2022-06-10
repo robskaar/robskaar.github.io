@@ -21,6 +21,7 @@ export default function IndexPage() {
       <div className={styles.temptext}>
         <br />
         {"Hi, i'm Robert."}
+        {"Welcome to my site"}
         <br />
         {/*         <GenericForm<TestType>
           selectOptions={["someelse", ["test"]]}
