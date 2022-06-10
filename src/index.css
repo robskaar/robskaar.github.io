@@ -48,6 +48,8 @@
   --status_info_clr: lightgrey;
   --status_alert_critical_clr: rgb(250, 0, 0);
 
+  /*Spacing styles*/
+  --button_padding_primary:10px;
   /*effect styles*/
   --clr_effect_transparency_minor: rgba(228, 228, 228, 0.767);
   --clr_effect_transparency_default: rgba(228, 228, 228, 0.514);

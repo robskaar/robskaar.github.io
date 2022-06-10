@@ -1,0 +1,25 @@
+.navlink {
+  color: white;
+  margin: var(--button_padding_primary);
+  border-radius: var(--border_radius_small);
+  background-color: var(--clr_secondary);
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, 60px);
+  grid-template-rows: min-content;
+  align-content: center;
+  justify-items: center;
+  justify-content: end;
+
+  margin: var(--button_padding_primary);
+}
+
+.pagewrapper {
+  display: grid;
+  grid-template-rows: min-content 10fr;
+  height: 100%;
+  overflow: auto;
+}
