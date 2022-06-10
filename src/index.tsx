@@ -15,8 +15,12 @@ root.render(
     <BrowserRouter>
       <div className={styles.pagewrapper}>
         <nav className={styles.nav}>
-          <Link className={styles.nav_link} to="/">Home</Link>
-          <Link className={styles.nav_link} to="/skills">skills</Link>
+          <Link className={styles.nav_link} to="/">
+            Home
+          </Link>
+          <Link className={styles.nav_link} to="/skills">
+            skills
+          </Link>
         </nav>
         <main>
           <Routes>

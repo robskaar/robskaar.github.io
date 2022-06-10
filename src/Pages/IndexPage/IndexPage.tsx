@@ -22,7 +22,7 @@ export default function IndexPage() {
         <br />
         {"Hi, i'm Robert."}
         <br />
-{/*         <GenericForm<TestType>
+        {/*         <GenericForm<TestType>
           selectOptions={["someelse", ["test"]]}
           initialValues={{
             name: "Robert",
