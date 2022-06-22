@@ -4,7 +4,7 @@ import IndexPage from "./IndexPage";
 test("renders learn react link", () => {
   render(<IndexPage />);
   const linkElement = screen.getByText(
-    /Hi, i'm Robert./i
+    /About/i
   );
   expect(linkElement).toBeInTheDocument();
 });
