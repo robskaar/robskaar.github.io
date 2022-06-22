@@ -1,7 +1,33 @@
-.temptext{
-    font-weight: bolder;
-    font-size: xx-large;
-    text-align: center;
-    display: grid;
-    align-items: center;
+.indexPageWrapper {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr 10px 2fr 10px 2fr;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  overflow: auto;
+
+  padding: 0px 10px 0px 10px;
+}
+.firstOption,
+.secondOption,
+.thirdOption,
+.fourthOption {
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(10px);
+  border-radius: 3x;
+  display: grid;
+  text-align: center;align-items: center;
+  color: rgb(255, 255, 255);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.firstOption {
+  grid-row: 2;
+}
+.secondOption {
+  grid-row: 2;
+}
+.thirdOption {
+  grid-row: 4;
+}
+.fourthOption {
+  grid-row: 4;
 }

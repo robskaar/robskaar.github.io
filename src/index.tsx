@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import "./index.css";
+import "./app.css";
 import IndexPage from "./Pages/IndexPage/IndexPage";
 import SkillsPage from "./Pages/Skills/SkillsPage";
 import reportWebVitals from "./reportWebVitals";
@@ -15,11 +15,8 @@ root.render(
     <BrowserRouter>
       <div className={styles.pagewrapper}>
         <nav className={styles.nav}>
-          <Link className={styles.nav_link} to="/">
-            Home
-          </Link>
-          <Link className={styles.nav_link} to="/skills">
-            skills
+          <Link className={styles.nav_logo} to="/">
+            Robert Skaar
           </Link>
         </nav>
         <main>
@@ -33,7 +30,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);

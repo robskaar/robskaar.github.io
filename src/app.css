@@ -26,8 +26,8 @@
   --border_radius_xlarge: 20px;
 
   /*Font styles*/
-  --font_clr_on_primary: var(--clr_secondary);
-  --font_clr_on_secondary: var(--clr-primary);
+  --font_clr_primary: var(--clr_secondary);
+  --font_clr_links: var(--clr-primary);
   --font_clr_on_tertiary: #0b1516;
   --font_clr_on_disabled: var(--clr_effect_transparency_default);
 
@@ -49,7 +49,7 @@
   --status_alert_critical_clr: rgb(250, 0, 0);
 
   /*Spacing styles*/
-  --button_padding_primary:10px;
+  --button_padding_primary: 10px;
   /*effect styles*/
   --clr_effect_transparency_minor: rgba(228, 228, 228, 0.767);
   --clr_effect_transparency_default: rgba(228, 228, 228, 0.514);
@@ -70,7 +70,7 @@
       animation: spin-360 infinite 1s linear;
     }
     .wave {
-      animation: wave infinite 2.5s
+      animation: wave infinite 2.5s;
     }
   }
   /*breakpoints*/
@@ -111,16 +111,18 @@
       transform: rotate(40deg);
     }
   }
+
 }
 
+@font-face {
+  font-family: "play";
+  src: url("./Common/Assets/Fonts/Rancho/Rancho-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -128,6 +130,17 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-color: var(--clr_primary);
+  background-color: #f699ff;
+  background-image: radial-gradient(
+      at 5% 6%,
+      hsla(316, 62%, 76%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 98% 28%, hsla(271, 81%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 42% 53%, hsla(186, 72%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 58%, hsla(267, 62%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 68% 40%, hsla(16, 64%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 84% 91%, hsla(77, 80%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 23% 42%, hsla(210, 87%, 68%, 1) 0px, transparent 50%);
   color: var(--font_clr_on_primary);
 }

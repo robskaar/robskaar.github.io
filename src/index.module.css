@@ -1,25 +1,24 @@
-.navlink {
-  color: white;
-  margin: var(--button_padding_primary);
-  border-radius: var(--border_radius_small);
-  background-color: var(--clr_secondary);
+.nav_logo {
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgb(56, 34, 82);
 }
 
 .nav {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, 60px);
   grid-template-rows: min-content;
   align-content: center;
+  padding: var(--button_padding_primary);
+  font-family: play;
+  justify-content: space-around;
+  align-items: center;
   justify-items: center;
-  justify-content: end;
-
-  margin: var(--button_padding_primary);
 }
 
 .pagewrapper {
   display: grid;
-  grid-template-rows: min-content 10fr;
+  grid-template-rows: min-content auto;
   height: 100%;
   overflow: auto;
 }
