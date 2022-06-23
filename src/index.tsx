@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <div className={styles.pagewrapper}>
-        <nav className={styles.nav}>
+        <nav>
           <Link className={styles.nav_logo} to="/">
             Robert Skaar
           </Link>

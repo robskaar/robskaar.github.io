@@ -1,37 +1,63 @@
+/*
+DEFAULT STYLES
+*/
 :root {
-  /*Background styles*/
-  --clr_primary: #9ab8ba;
-  --background_clr_primary_hover: purple;
-  --background_clr_primary_active: purple;
-  --background_clr_primary_disabled: purple;
+  /*
+  COLOR STYLES
+  */
+  --clr_primary: #c2ded1;
+  --clr_primary_hover: purple;
+  --clr_primary_active: purple;
+  --clr_primary_disabled: purple;
 
-  --clr_secondary: #045256;
-  --background_clr_secondary_hover: purple;
-  --background_clr_secondary_active: purple;
-  --background_clr_secondary_disabled: purple;
+  --clr_secondary: #354259;
+  --clr_secondary_hover: purple;
+  --clr_secondary_active: purple;
+  --clr_secondary_disabled: purple;
 
-  --clr_tertiary: #ddf7f8;
-  --background_clr_tertiary_hover: purple;
-  --background_clr_tertiary_active: purple;
-  --background_clr_tertiary_disabled: purple;
+  --clr_tertiary: #ECE5C7;
+  --clr_tertiary_hover: purple;
+  --clr_tertiary_active: purple;
+  --clr_tertiary_disabled: purple;
 
-  /*Border styles*/
-  --border_clr_on_primary: lavender;
-  --border_clr_on_secondary: firebrick;
-  --border_clr_on_tertiary: beige;
-  --border_clr_on_quartinary: lightblue;
+  --clr_quartinary: #CDC2AE;
+  --clr_quartinary_hover: purple;
+  --clr_quartinary_active: purple;
+  --clr_quartinary_disabled: purple;
+
+  --clr_border_on_primary: purple;
+  --clr_border_on_secondary: purple;
+  --clr_border_on_tertiary: purple;
+  --clr_border_on_quartinary: purple;
+
+  --clr_hyperlink:rgb(41, 188, 236);
+
+  
+  --clr_status_alert: red;
+  --clr_status_notification: green;
+  --clr_status_warning: darkorange;
+  --clr_status_ok: lightgreen;
+  --clr_status_info: lightgrey;
+  --clr_status_alert_critical: rgb(250, 0, 0);
+
+  /*
+  BORDER STYLES
+  */
   --border_radius_small: 2px;
   --border_radius_medium: 4px;
   --border_radius_large: 10px;
   --border_radius_xlarge: 20px;
 
-  /*Font styles*/
-  --font_clr_primary: var(--clr_secondary);
-  --font_clr_links: var(--clr-primary);
-  --font_clr_on_tertiary: #0b1516;
-  --font_clr_on_disabled: var(--clr_effect_transparency_default);
+  /*
+  FONT STYLES
+  */
+  --font_family_header:play;
+  --font_family_body:roboto;
+  --font_family_subheader:play
 
-  /*Icon styles*/
+  /*
+  ICON STYLES
+  */
   --icon_size_xsmall: 2px;
   --icon_size_small: 5px;
   --icon_size_default: 16px;
@@ -40,25 +66,13 @@
   --icon_size_xxlarge: 64px;
   --icon_size_xxxlarge: 95px;
 
-  /*Status styles*/
-  --status_alert_clr: red;
-  --status_notification_clr: green;
-  --status_warning_clr: darkorange;
-  --status_ok_clr: lightgreen;
-  --status_info_clr: lightgrey;
-  --status_alert_critical_clr: rgb(250, 0, 0);
-
-  /*Spacing styles*/
-  --button_padding_primary: 10px;
-  /*effect styles*/
-  --clr_effect_transparency_minor: rgba(228, 228, 228, 0.767);
-  --clr_effect_transparency_default: rgba(228, 228, 228, 0.514);
-  --clr_effect_transparency_major: rgba(228, 228, 228, 0.11);
-
-  /*preffered color schemes*/
+  /*
+  ACCESIBILITY STYLES
+  */
   @media (prefers-color-scheme: dark) {
     /*set variable colors differntly for dark users*/
   }
+  /* if no preference for reduced motion, enable animation classes*/
   @media (prefers-reduced-motion: no-preference) {
     .spin {
       animation: spin-360 infinite 3s linear;
@@ -72,28 +86,8 @@
     .wave {
       animation: wave infinite 2.5s;
     }
-  }
-  /*breakpoints*/
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-  }
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-  }
-
+    
   /* Animations*/
   @keyframes spin-360 {
     from {
@@ -110,6 +104,7 @@
     to {
       transform: rotate(40deg);
     }
+  }
   }
 
 }
@@ -130,17 +125,28 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-color: #f699ff;
-  background-image: radial-gradient(
-      at 5% 6%,
-      hsla(316, 62%, 76%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 98% 28%, hsla(271, 81%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 42% 53%, hsla(186, 72%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 2% 58%, hsla(267, 62%, 71%, 1) 0px, transparent 50%),
-    radial-gradient(at 68% 40%, hsla(16, 64%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 84% 91%, hsla(77, 80%, 66%, 1) 0px, transparent 50%),
-    radial-gradient(at 23% 42%, hsla(210, 87%, 68%, 1) 0px, transparent 50%);
-  color: var(--font_clr_on_primary);
+  background-color: var(--clr_primary);
+  color: var(--clr_secondary);
+}
+
+/*
+BREAKPOINTS
+Default styles apply to small-medium mobile phones, 600px and down.
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
 }

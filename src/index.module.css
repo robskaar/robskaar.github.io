@@ -1,24 +1,57 @@
-.nav_logo {
-  font-size: 3rem;
-  text-decoration: none;
-  color: rgb(56, 34, 82);
-}
-
-.nav {
+/*
+DEFAULT STYLES
+*/
+nav {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: min-content;
   align-content: center;
   padding: var(--button_padding_primary);
-  font-family: play;
+  font-family: var(--font_family_header);
   justify-content: space-around;
   align-items: center;
   justify-items: center;
+  padding:16px 16px 0px 16px;
 }
-
+main{
+  padding:16px;
+}
+.nav_logo {
+  text-decoration: none;
+  color: rgb(56, 34, 82);
+  font-size: 3rem;
+}
 .pagewrapper {
   display: grid;
   grid-template-rows: min-content auto;
   height: 100%;
   overflow: auto;
+}
+
+
+/*
+BREAKPOINTS
+Default styles apply to small-medium mobile phones, 600px and down.
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav_logo {
+    font-size: 5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav_logo {
+    font-size: 7rem;
+  }
 }

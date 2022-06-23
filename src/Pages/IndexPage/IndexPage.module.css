@@ -1,33 +1,33 @@
+/*
+DEFAULT STYLES
+*/
 .indexPageWrapper {
   display: grid;
-  grid-template-rows: 1.5fr 2fr 10px 2fr 10px 2fr;
-  column-gap: 10px;
-  grid-template-columns: 1fr 1fr;
   height: 100%;
   overflow: auto;
+}
 
-  padding: 0px 10px 0px 10px;
+
+
+
+/*
+BREAKPOINTS
+Default styles apply to small-medium mobile phones, 600px and down.
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
 }
-.firstOption,
-.secondOption,
-.thirdOption,
-.fourthOption {
-  background: rgba(255, 255, 255, 0.192);
-  backdrop-filter: blur(10px);
-  border-radius: 3x;
-  display: grid;
-  text-align: center;align-items: center;
-  color: rgb(255, 255, 255);
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-.firstOption {
-  grid-row: 2;
+/* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
 }
-.secondOption {
-  grid-row: 2;
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
-.thirdOption {
-  grid-row: 4;
-}
-.fourthOption {
-  grid-row: 4;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
 }

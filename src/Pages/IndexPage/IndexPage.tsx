@@ -18,13 +18,7 @@ interface TestType {
 export default function IndexPage() {
   return (
     <div className={styles.indexPageWrapper}>
-      <div className={styles.firstOption}>About</div>
-
-
-      <div className={styles.secondOption}>Projects</div>
-      <div className={styles.thirdOption}>Activity</div>
-      <div className={styles.fourthOption}>Contact</div>
-
+      <div>hi</div>
       {/*         <GenericForm<TestType>
           selectOptions={["someelse", ["test"]]}
           initialValues={{
