@@ -1,38 +1,21 @@
-/*
-DEFAULT STYLES
-*/
+/* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
+
 :root {
   /*
   COLOR STYLES
+  if needed add borders and subvariants like below
+  for border :         --borger_on_cssvarnamehere (e.g. --border_on_clr_primary)
+  for subvariants :    --cssvarnamehere_hover / _active / _disabled (e.g. --clr_primary_hover)
+
   */
-  --clr_primary: #c2ded1;
-  --clr_primary_hover: purple;
-  --clr_primary_active: purple;
-  --clr_primary_disabled: purple;
-
-  --clr_secondary: #354259;
-  --clr_secondary_hover: purple;
-  --clr_secondary_active: purple;
-  --clr_secondary_disabled: purple;
-
+  
+  --clr_primary: #96BE8C;
+  --clr_secondary: #243119;
   --clr_tertiary: #ECE5C7;
-  --clr_tertiary_hover: purple;
-  --clr_tertiary_active: purple;
-  --clr_tertiary_disabled: purple;
 
   --clr_quartinary: #CDC2AE;
-  --clr_quartinary_hover: purple;
-  --clr_quartinary_active: purple;
-  --clr_quartinary_disabled: purple;
-
-  --clr_border_on_primary: purple;
-  --clr_border_on_secondary: purple;
-  --clr_border_on_tertiary: purple;
-  --clr_border_on_quartinary: purple;
 
   --clr_hyperlink:rgb(41, 188, 236);
-
-  
   --clr_status_alert: red;
   --clr_status_notification: green;
   --clr_status_warning: darkorange;
@@ -43,28 +26,28 @@ DEFAULT STYLES
   /*
   BORDER STYLES
   */
-  --border_radius_small: 2px;
-  --border_radius_medium: 4px;
-  --border_radius_large: 10px;
-  --border_radius_xlarge: 20px;
+  --border_radius_small: 0.13rem;
+  --border_radius_medium: 0.3px;
+  --border_radius_large: 0.625rem;
+  --border_radius_xlarge: 1.25rem;
 
   /*
   FONT STYLES
   */
   --font_family_header:play;
   --font_family_body:roboto;
-  --font_family_subheader:play
-
+  --font_family_subheader:play;
+ 
   /*
   ICON STYLES
   */
-  --icon_size_xsmall: 2px;
-  --icon_size_small: 5px;
-  --icon_size_default: 16px;
-  --icon_size_large: 24px;
-  --icon_size_xlarge: 36px;
-  --icon_size_xxlarge: 64px;
-  --icon_size_xxxlarge: 95px;
+  --icon_size_xsmall: 0.13rem;
+  --icon_size_small: 0.313rem;
+  --icon_size_default: 1rem;
+  --icon_size_large: 1.5rem;
+  --icon_size_xlarge: 2.25rem;
+  --icon_size_xxlarge: 4rem;
+  --icon_size_xxxlarge: 5.938rem;
 
   /*
   ACCESIBILITY STYLES
@@ -129,10 +112,10 @@ body,
   color: var(--clr_secondary);
 }
 
-/*
-BREAKPOINTS
-Default styles apply to small-medium mobile phones, 600px and down.
-*/
+
+
+
+/* BREAKPOINTS */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

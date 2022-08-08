@@ -1,20 +1,17 @@
-/*
-DEFAULT STYLES
-*/
+
+
+
+
+
+
+/* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
 .indexPageWrapper {
   display: grid;
   height: 100%;
   overflow: auto;
 }
 
-
-
-
-/*
-BREAKPOINTS
-Default styles apply to small-medium mobile phones, 600px and down.
-*/
-
+/* BREAKPOINTS */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 

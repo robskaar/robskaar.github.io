@@ -1,26 +1,28 @@
-/*
-DEFAULT STYLES
-*/
-nav {
+/* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
+#fullmenu {
   display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: min-content;
-  align-content: center;
-  padding: var(--button_padding_primary);
   font-family: var(--font_family_header);
-  justify-content: space-around;
+  grid-template-columns: 1fr 9fr;
   align-items: center;
   justify-items: center;
-  padding:16px 16px 0px 16px;
 }
-main{
-  padding:16px;
+main {
+  padding: 16px;
 }
+
+.nav_menu,.nav_hamburger,
 .nav_logo {
   text-decoration: none;
-  color: rgb(56, 34, 82);
+  color: var(--clr_secondary)
+}
+.nav_logo {
+  padding-left:1rem;
   font-size: 3rem;
 }
+.nav_menu {
+  display: none;
+}
+
 .pagewrapper {
   display: grid;
   grid-template-rows: min-content auto;
@@ -28,11 +30,7 @@ main{
   overflow: auto;
 }
 
-
-/*
-BREAKPOINTS
-Default styles apply to small-medium mobile phones, 600px and down.
-*/
+/* BREAKPOINTS */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
