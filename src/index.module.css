@@ -1,4 +1,6 @@
 /* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
+
+
 #fullmenu {
   display: grid;
   font-family: var(--font_family_header);

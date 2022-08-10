@@ -8,14 +8,14 @@
   for subvariants :    --cssvarnamehere_hover / _active / _disabled (e.g. --clr_primary_hover)
 
   */
-  
-  --clr_primary: #96BE8C;
+
+  --clr_primary: #96be8c;
   --clr_secondary: #243119;
-  --clr_tertiary: #ECE5C7;
+  --clr_tertiary: #ece5c7;
 
-  --clr_quartinary: #CDC2AE;
+  --clr_quartinary: #cdc2ae;
 
-  --clr_hyperlink:rgb(41, 188, 236);
+  --clr_hyperlink: rgb(41, 188, 236);
   --clr_status_alert: red;
   --clr_status_notification: green;
   --clr_status_warning: darkorange;
@@ -34,10 +34,10 @@
   /*
   FONT STYLES
   */
-  --font_family_header:play;
-  --font_family_body:roboto;
-  --font_family_subheader:play;
- 
+  --font_family_header: play;
+  --font_family_body: roboto;
+  --font_family_subheader: play;
+
   /*
   ICON STYLES
   */
@@ -48,29 +48,33 @@
   --icon_size_xlarge: 2.25rem;
   --icon_size_xxlarge: 4rem;
   --icon_size_xxxlarge: 5.938rem;
-
-  /*
+}
+/*
   ACCESIBILITY STYLES
   */
-  @media (prefers-color-scheme: dark) {
-    /*set variable colors differntly for dark users*/
-  }
-  /* if no preference for reduced motion, enable animation classes*/
-  @media (prefers-reduced-motion: no-preference) {
-    .spin {
-      animation: spin-360 infinite 3s linear;
-    }
-    .spin-slow {
-      animation: spin-360 infinite 20s linear;
-    }
-    .spin-quick {
-      animation: spin-360 infinite 1s linear;
-    }
-    .wave {
-      animation: wave infinite 2.5s;
-    }
+@media (prefers-color-scheme: dark) {
+  /*set variable colors differntly for dark users*/
+}
+/* if no preference for reduced motion, enable animation classes*/
 
-    
+@media (prefers-reduced-motion: no-preference) {
+  .spin {
+    animation: spin-360 infinite 3s linear;
+  }
+  .spin-slow {
+    animation: spin-360 infinite 20s linear;
+  }
+  .spin-quick {
+    animation: spin-360 infinite 1s linear;
+  }
+  .wave {
+    animation-name: wave;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
   /* Animations*/
   @keyframes spin-360 {
     from {
@@ -81,14 +85,15 @@
     }
   }
   @keyframes wave {
-    from {
-      transform: rotate(-40deg);
-    }
-    to {
-      transform: rotate(40deg);
-    }
-  }
-  }
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
 
 }
 
@@ -110,26 +115,4 @@ body,
   height: 100%;
   background-color: var(--clr_primary);
   color: var(--clr_secondary);
-}
-
-
-
-
-/* BREAKPOINTS */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-/* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  
 }

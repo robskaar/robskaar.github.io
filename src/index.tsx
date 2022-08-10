@@ -5,7 +5,7 @@ import "./app.css";
 import IndexPage from "./Pages/IndexPage/IndexPage";
 import reportWebVitals from "./reportWebVitals";
 import styles from "./index.module.css";
-import HamburgerMenu from "./Common/Components/HamburgerMenu";
+import HamburgerMenu from "./Common/Components/UI/HamburgerMenu";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

@@ -20,7 +20,7 @@ export default function HamburgerMenu() {
         <span className={styles.middle}></span>
         <span className={styles.bottom}></span>
       </div>
-      <div
+      <div role="menu"
         className={`${styles.overlay} ${hamburgerToggled ? styles.open : ""}`}
         id="overlay"
       >
