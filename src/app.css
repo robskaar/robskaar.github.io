@@ -48,6 +48,13 @@
   --icon_size_xlarge: 2.25rem;
   --icon_size_xxlarge: 4rem;
   --icon_size_xxxlarge: 5.938rem;
+
+  /*ANIMATION REFERENCES*/
+  --animation_type:typing;
+  --animation_blink:blink ;
+  --animation_wave:wave 2.5s;
+  --animation:animation;
+  --animation_spin:spin infinite 5s linear;
 }
 /*
   ACCESIBILITY STYLES
@@ -58,30 +65,31 @@
 /* if no preference for reduced motion, enable animation classes*/
 
 @media (prefers-reduced-motion: no-preference) {
-  .spin {
-    animation: spin-360 infinite 3s linear;
-  }
-  .spin-slow {
-    animation: spin-360 infinite 20s linear;
-  }
-  .spin-quick {
-    animation: spin-360 infinite 1s linear;
-  }
-  .wave {
-    animation-name: wave;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
-  }
 
+  @keyframes animation {
+    from {border-bottom-color: rgba(var(--c), 0);}
+    50%{border-bottom-color: rgba(var(--c), 0.5);}
+    to {border-bottom-color: rgba(var(--c), 0);}
+  }
+@keyframes typing {
+  from {
+    width: var(--animation_typing_startCharPosition,0);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: var(--animation_blink_initialBorderColor,transparent);
+    border-right: var(--animation_blink_border,3px solid);
+  }
+}
   /* Animations*/
-  @keyframes spin-360 {
+  @keyframes spin {
     from {
-      transform: rotate(0deg);
+      transform: rotate(var(--animation_spin_from,0deg));
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(var(--animation_spin_to,360deg));
     }
   }
   @keyframes wave {

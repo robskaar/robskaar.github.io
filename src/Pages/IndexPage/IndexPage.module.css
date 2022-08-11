@@ -13,7 +13,26 @@
   grid-template-columns: max-content min-content;
   align-items: center;
 }
+/*
+  ACCESIBILITY STYLES
+  */
+@media (prefers-reduced-motion: no-preference) {
+  .typeFirst {
+    --animation_blink_initialBorderColor: transparent;
+    --animation_blink_border: 3px solid;
+    width: 19ch;
+    animation: var(--animation_type) 2s steps(19),
+      var(--animation_blink) 0.5s step-end 4 alternate;
+    white-space: nowrap;
+    overflow: hidden;
 
+    max-width: min-content;
+  }
+  .wave {
+    animation: var(--animation_wave);
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  }
+}
 /* BREAKPOINTS */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
