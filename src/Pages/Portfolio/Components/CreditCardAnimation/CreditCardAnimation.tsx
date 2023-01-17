@@ -11,7 +11,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="CreditCard" clip-path="url(#clip0_103_148)">
+      <g id="CreditCard" clipPath="url(#clip0_103_148)">
         <g id="Backgrounds">
           <g id="Background" filter="url(#filter0_d_103_148)">
             <rect
@@ -37,7 +37,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
             <path
               d="M46.5 34.5C18.3596 39.2561 2.66666 27.5 1 28.5V47C1 50.3137 3.68629 53 7 53H84C87.3137 53 90 50.3137 90 47L90 34.5C73 34.5 82 28.5 46.5 34.5Z"
               fill="url(#paint1_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
         </g>
@@ -240,7 +240,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint2_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 29">
@@ -259,7 +259,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint3_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 30">
@@ -278,7 +278,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint4_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 31">
@@ -297,7 +297,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint5_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 32">
@@ -316,7 +316,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint6_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 34">
@@ -335,7 +335,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint7_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 35">
@@ -354,7 +354,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint8_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 33">
@@ -373,7 +373,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="1"
               rx="0.5"
               fill="url(#paint9_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
           <g  style={{ "--order": 3 } as React.CSSProperties} id="Rectangle 36">
@@ -385,7 +385,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               height="7"
               rx="1"
               fill="url(#paint10_linear_103_148)"
-              fill-opacity="0.66"
+              fillOpacity="0.66"
             />
           </g>
         </g>
@@ -398,9 +398,9 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           width="93"
           height="56"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -434,8 +434,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="-3.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1A0830" />
-          <stop offset="1" stop-color="#66C0D3" stop-opacity="0" />
+          <stop stopColor="#1A0830" />
+          <stop offset="1" stopColor="#66C0D3" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_103_148"
@@ -445,8 +445,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="66.016"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_103_148"
@@ -456,8 +456,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="50.9922"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_103_148"
@@ -467,8 +467,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="55.1188"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_103_148"
@@ -478,8 +478,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="55.5797"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_103_148"
@@ -489,8 +489,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="54.794"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_103_148"
@@ -500,8 +500,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="49.5181"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_103_148"
@@ -511,8 +511,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="49.5181"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_103_148"
@@ -522,8 +522,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="54.794"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_103_148"
@@ -533,8 +533,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="49.5181"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_103_148"
@@ -544,8 +544,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
           y2="13.9439"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" stop-opacity="0.26" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" stopOpacity="0.26" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <clipPath id="clip0_103_148">
           <rect width="92" height="54" fill="white" />

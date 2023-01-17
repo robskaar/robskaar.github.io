@@ -15,7 +15,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <g id="phone" clip-path="url(#clip0_1_66)">
+      <g id="phone" clipPath="url(#clip0_1_66)">
         <g id="phone_2" filter="url(#filter0_d_1_66)">
           <rect x="2" y="2" width="52" height="89" rx="6" fill="#D9D9D9" />
         </g>
@@ -230,7 +230,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 height="8"
                 rx="3"
                 fill="url(#paint0_linear_1_66)"
-                fill-opacity="0.66"
+                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -262,7 +262,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 height="5"
                 rx="2.5"
                 fill="url(#paint1_linear_1_66)"
-                fill-opacity="0.66"
+                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -294,7 +294,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 height="5"
                 rx="2.5"
                 fill="url(#paint2_linear_1_66)"
-                fill-opacity="0.66"
+                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -326,7 +326,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 height="5"
                 rx="2.5"
                 fill="url(#paint3_linear_1_66)"
-                fill-opacity="0.66"
+                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -358,7 +358,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 height="5"
                 rx="2.5"
                 fill="url(#paint4_linear_1_66)"
-                fill-opacity="0.66"
+                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -380,9 +380,9 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           width="56"
           height="93"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -456,8 +456,8 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           y2="88.4197"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_66"
@@ -467,8 +467,8 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           y2="50.6883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1_66"
@@ -478,8 +478,8 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           y2="32.6883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1_66"
@@ -489,8 +489,8 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           y2="32.6883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1_66"
@@ -500,8 +500,8 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
           y2="50.6883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#66C0D3" />
-          <stop offset="1" stop-color="#1A0830" />
+          <stop stopColor="#66C0D3" />
+          <stop offset="1" stopColor="#1A0830" />
         </linearGradient>
         <clipPath id="clip0_1_66">
           <rect width="56" height="93" fill="white" />
