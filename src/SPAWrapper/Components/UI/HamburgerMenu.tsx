@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./HamburgerMenu.module.css";
 
@@ -30,16 +31,16 @@ export default function HamburgerMenu(props: HamburgerMenuProps) {
         <nav className={styles.overlay_menu}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li>
-              <a href="/">About</a>
+              <Link to="/">About</Link>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <Link to="/">Contact</Link>
             </li>
           </ul>
         </nav>
