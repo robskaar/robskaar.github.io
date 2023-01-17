@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import SPAWrapper from "./SPAWrapper/SPAWrapper";
@@ -15,4 +15,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
