@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import styles from './index.module.css'
 import "./index.css";
 import Home from "./Pages/Home/Home";
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <div
       className={`${styles.pagewrapper}`}
     >
@@ -31,6 +31,6 @@ root.render(
         </Routes>
       </main>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
