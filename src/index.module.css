@@ -1,0 +1,117 @@
+/* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
+#fullmenu {
+    height: 50px;
+    display: grid;
+    font-family: var(--font_family_header);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  main {
+    padding: 16px;
+  }
+  .nav_menu,
+  .nav_hamburger,
+  .nav_logo {
+    text-decoration: none;
+    color: var(--clr_secondary);
+    cursor: alias;
+  }
+  .nav_logo {
+    padding-left: 1rem;
+    font-size: 3rem;
+  }
+  .nav_menu {
+    display: none;
+  }
+  
+  .pagewrapper {
+    display: grid;
+    grid-template-rows: min-content auto;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /*
+    ACCESIBILITY STYLES
+    */
+  @media (prefers-reduced-motion: no-preference) {
+    .wave {
+      animation: var(--animation_wave);
+      transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    }
+    @keyframes horizontal-shaking {
+      0% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      12.5% {
+        transform: rotate(5deg);
+      }
+      25% {
+        transform: translate(5px, 5px) rotate(0deg);
+      }
+      35.5% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      62.5% {
+        transform: rotate(5deg);
+      }
+      75% {
+        transform: translate(-5px, 5px) rotate(0deg);
+      }
+      87.5% {
+        transform: rotate(-5deg);
+      }
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+    @keyframes roar {
+      0% {
+        top: 20%;
+        left: 40%;
+        width: 20%;
+        opacity: 0;
+      }
+      75% {
+        opacity: 1;
+        top: 10%;
+        left: 20%;
+        width: 60%;
+      }
+      100% {
+        top: 10%;
+        left: 20%;
+        width: 60%;
+        opacity: 0;
+      }
+    }
+  }
+  
+  /* BREAKPOINTS */
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .nav_logo {
+      font-size: 5rem;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .nav_logo {
+      font-size: 7rem;
+    }
+  }
+  
