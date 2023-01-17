@@ -4,7 +4,7 @@
   position: fixed;
   height: 27px;
   width: 35px;
-  cursor: pointer;
+
   z-index: 100;
   transition: opacity 0.25s ease;
   right: 1rem;
@@ -24,6 +24,11 @@
   transform: translateY(-11px) translateX(0) rotate(-45deg);
   background: #fff;
 }
+.top,
+.middle,
+.bottom {
+  border-radius: 3px;
+}
 .button_container span {
   background: var(--clr_secondary);
   border: none;
@@ -33,7 +38,6 @@
   top: 0;
   left: 0;
   transition: all 0.35s ease;
-  cursor: pointer;
 }
 .button_container span:nth-of-type(2) {
   top: 11px;
@@ -53,6 +57,8 @@
   visibility: hidden;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
+
+  z-index: 1;
 }
 .overlay.open {
   opacity: 0.9;
@@ -108,7 +114,7 @@
 .overlay ul li a:hover:after,
 .overlay ul li a:focus:after,
 .overlay ul li a:active:after {
-  width: 100%;
+  width: 50%;
 }
 .overlay ul li a:after {
   content: "";
@@ -140,6 +146,12 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .overlay ul li a:hover:after,
+  .overlay ul li a:focus:after,
+  .overlay ul li a:active:after {
+    width: 30%;
+  }
+
   .nav_logo {
     font-size: 5rem;
   }

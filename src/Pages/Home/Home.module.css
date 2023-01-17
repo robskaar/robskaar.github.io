@@ -1,4 +1,5 @@
 /* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
+
 .indexPageWrapper {
   display: grid;
   height: 100%;
@@ -6,31 +7,55 @@
   grid-template-rows: min-content min-content min-content min-content 1fr;
   align-content: center;
   justify-content: center;
+  overflow: hidden;
 }
-
-.h1 {
-  display: grid;
-  grid-template-columns: max-content min-content;
-  align-items: center;
+.text {
+  transition: fill 0.3s ease-out;
+}
+.text:hover {
+  fill: var(--clr_primary);
+}
+.dropIn > g {
+  opacity: 0;
+  animation: dropIn 8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--order) * 200ms);
+  animation-iteration-count: infinite;
+}
+.skeleton {
+  animation: fadeInDown 1s;
+}
+svg {
+  transform: scale(9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 /*
   ACCESIBILITY STYLES
   */
 @media (prefers-reduced-motion: no-preference) {
-  .typeFirst {
-    --animation_blink_initialBorderColor: transparent;
-    --animation_blink_border: 3px solid;
-    width: 19ch;
-    animation: var(--animation_type) 2s steps(19),
-      var(--animation_blink) 0.5s step-end 4 alternate;
-    white-space: nowrap;
-    overflow: hidden;
-
-    max-width: min-content;
+  @keyframes dropIn {
+    20% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    30%,
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .wave {
-    animation: var(--animation_wave);
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
 }
 /* BREAKPOINTS */

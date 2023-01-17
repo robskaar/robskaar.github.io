@@ -9,8 +9,8 @@
 
   */
 
-  --clr_primary: #96be8c;
-  --clr_secondary: #243119;
+  --clr_primary: #66c0d3;
+  --clr_secondary: #1a0830;
   --clr_tertiary: #ece5c7;
 
   --clr_quartinary: #cdc2ae;
@@ -50,11 +50,11 @@
   --icon_size_xxxlarge: 5.938rem;
 
   /*ANIMATION REFERENCES*/
-  --animation_type:typing;
-  --animation_blink:blink ;
-  --animation_wave:wave 2.5s;
-  --animation:animation;
-  --animation_spin:spin infinite 5s linear;
+  --animation_type: typing;
+  --animation_blink: blink;
+  --animation_wave: wave 2.5s;
+  --animation: animation;
+  --animation_spin: spin infinite 5s linear;
 }
 /*
   ACCESIBILITY STYLES
@@ -65,49 +65,69 @@
 /* if no preference for reduced motion, enable animation classes*/
 
 @media (prefers-reduced-motion: no-preference) {
-
   @keyframes animation {
-    from {border-bottom-color: rgba(var(--c), 0);}
-    50%{border-bottom-color: rgba(var(--c), 0.5);}
-    to {border-bottom-color: rgba(var(--c), 0);}
+    from {
+      border-bottom-color: rgba(var(--c), 0);
+    }
+    50% {
+      border-bottom-color: rgba(var(--c), 0.5);
+    }
+    to {
+      border-bottom-color: rgba(var(--c), 0);
+    }
   }
-@keyframes typing {
-  from {
-    width: var(--animation_typing_startCharPosition,0);
+  @keyframes typing {
+    from {
+      width: var(--animation_typing_startCharPosition, 0);
+    }
   }
-}
 
-@keyframes blink {
-  50% {
-    border-color: var(--animation_blink_initialBorderColor,transparent);
-    border-right: var(--animation_blink_border,3px solid);
+  @keyframes blink {
+    50% {
+      border-color: var(--animation_blink_initialBorderColor, transparent);
+      border-right: var(--animation_blink_border, 3px solid);
+    }
   }
-}
   /* Animations*/
   @keyframes spin {
     from {
-      transform: rotate(var(--animation_spin_from,0deg));
+      transform: rotate(var(--animation_spin_from, 0deg));
     }
     to {
-      transform: rotate(var(--animation_spin_to,360deg));
+      transform: rotate(var(--animation_spin_to, 360deg));
     }
   }
   @keyframes wave {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}
-
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
 
 @font-face {
   font-family: "play";
-  src: url("./Common/Assets/Fonts/Rancho/Rancho-Regular.ttf") format("truetype");
+  src: url("./Common/Fonts/MainFont/Rancho-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -121,6 +141,11 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-color: var(--clr_primary);
+  background: linear-gradient(
+    204deg,
+    rgba(102, 192, 211, 1) 0%,
+    rgba(26, 8, 48, 1) 100%
+  );
   color: var(--clr_secondary);
+  overflow: hidden;
 }

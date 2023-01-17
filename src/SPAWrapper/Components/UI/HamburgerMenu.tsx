@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 
 import styles from "./HamburgerMenu.module.css";
-export default function HamburgerMenu() {
+
+interface HamburgerMenuProps {}
+
+export default function HamburgerMenu(props: HamburgerMenuProps) {
   const [hamburgerToggled, setHamburgerToggled] = useState<boolean>(false);
 
   return (
     <>
       <div
         className={`${styles.button_container} ${
-          hamburgerToggled ? styles.active : ""
+          hamburgerToggled ? styles.active : undefined
         }`}
         onClick={() => {
           setHamburgerToggled(!hamburgerToggled);
-          console.log(hamburgerToggled);
         }}
         id="toggle"
       >
@@ -20,7 +22,8 @@ export default function HamburgerMenu() {
         <span className={styles.middle}></span>
         <span className={styles.bottom}></span>
       </div>
-      <div role="menu"
+      <div
+        role="menu"
         className={`${styles.overlay} ${hamburgerToggled ? styles.open : ""}`}
         id="overlay"
       >
@@ -30,7 +33,7 @@ export default function HamburgerMenu() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Portfolio</a>
+              <a href="/portfolio">Portfolio</a>
             </li>
             <li>
               <a href="/">About</a>
