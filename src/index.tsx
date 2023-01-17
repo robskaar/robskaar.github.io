@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import SPAWrapper from "./SPAWrapper/SPAWrapper";
 import "./index.css";
 
