@@ -147,11 +147,15 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--clr_primary);
+  color: var(--clr_text);
 }
 h5,
 h6 {
   color: var(--clr_secondary);
+  padding: 4px;
+  width: max-content;
+  border-radius: 3px;
+  background-color: var(--clr_quartinary);
 }
 h1 {
   font-size: 2.5rem;
@@ -179,14 +183,14 @@ h6 {
 
 /* Paragraphs */
 p {
-  color: white;
+  color: var(--clr_text);
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 /* Links */
 a {
-  color: var(--clr_primary);
+  color: var(--clr_secondary);
   text-decoration: underline;
 }
 
@@ -228,13 +232,13 @@ code {
 
   */
 
-  --clr_primary: #66c0d3;
-  --clr_secondary: #2c666e;
-  --clr_tertiary: #17141f;
+  --clr_primary: #5CDB95;
+  --clr_secondary: #05386b;
+  --clr_tertiary: #379683;
+  --clr_quartinary: #8ee4af;
+  --clr_text: #edf5e1;
 
-  --clr_quartinary: #cdc2ae;
-
-  --clr_hyperlink: rgb(41, 188, 236);
+  --clr_link: #ff6978;
   --clr_status_alert: red;
   --clr_status_notification: green;
   --clr_status_warning: darkorange;
@@ -360,7 +364,7 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background: var(--clr_tertiary);
-  color: var(--clr_secondary);
+  background: var(--clr_primary);
+  color: var(--clr_text);
   overflow: hidden;
 }

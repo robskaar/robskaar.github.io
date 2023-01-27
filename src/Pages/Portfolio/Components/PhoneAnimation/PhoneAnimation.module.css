@@ -16,6 +16,14 @@
 #skeleton {
   animation: fadeInDown 1s;
 }
+
+#buttonOverlay,
+#heart1,
+#heart2,
+#heart3,
+#heart4 {
+  fill: var(--clr_secondary);
+}
 .svgContainer {
   width: 75%;
   height: 100%;

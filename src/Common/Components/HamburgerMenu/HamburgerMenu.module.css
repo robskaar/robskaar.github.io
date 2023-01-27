@@ -30,7 +30,7 @@
   border-radius: 3px;
 }
 .button_container span {
-  background: var(--clr_secondary);
+  background: var(--clr_text);
   border: none;
   height: 5px;
   width: 100%;

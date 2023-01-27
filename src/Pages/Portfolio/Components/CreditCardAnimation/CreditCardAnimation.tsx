@@ -1,10 +1,9 @@
-import AnimationBase from "../../../../Common/Entities/AnimationBase";
 import styles from "./CreditCardAnimation.module.css";
 interface CreditCardAnimationProps {}
 export default function CreditCardAnimation(props: CreditCardAnimationProps) {
   return (
     <svg
-    className={styles.svgContainer}
+      className={styles.svgContainer}
       viewBox="0 0 92 54"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +22,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
             />
           </g>
           <path
-            id="Vector 6"
+            id={styles.backWave}
             d="M44.5 23.0073C77.3 15.8073 88.3333 16.0073 90 17.0073V35.5073C90 38.821 87.3137 41.5073 84 41.5073H7.00001C3.6863 41.5073 1.00002 38.821 1.00001 35.5073L1 23.0073C1.83334 26.0073 11.7 30.2073 44.5 23.0073Z"
-            fill="url(#paint0_linear_103_148)"
           />
           <g id="Vector 5">
             <path
@@ -33,9 +31,8 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               fill="#C2C2C2"
             />
             <path
+              id={styles.frontWave}
               d="M46.5 34.5C18.3596 39.2561 2.66666 27.5 1 28.5V47C1 50.3137 3.68629 53 7 53H84C87.3137 53 90 50.3137 90 47L90 34.5C73 34.5 82 28.5 46.5 34.5Z"
-              fill="url(#paint1_linear_103_148)"
-              fillOpacity="0.66"
             />
           </g>
         </g>
@@ -232,13 +229,12 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               fill="#C2C2C2"
             />
             <rect
+              className={styles.bottomInfo}
               x="5.5"
               y="47.5"
               width="4"
               height="1"
               rx="0.5"
-              fill="url(#paint2_linear_103_148)"
-              fillOpacity="0.66"
             />
           </g>
           <g id="Rectangle 29">
@@ -256,8 +252,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               width="10"
               height="1"
               rx="0.5"
-              fill="url(#paint3_linear_103_148)"
-              fillOpacity="0.66"
+              className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 30">
@@ -275,8 +270,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               width="12"
               height="1"
               rx="0.5"
-              fill="url(#paint4_linear_103_148)"
-              fillOpacity="0.66"
+              className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 31">
@@ -294,8 +288,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               width="9"
               height="1"
               rx="0.5"
-              fill="url(#paint5_linear_103_148)"
-              fillOpacity="0.66"
+              className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 32">
@@ -313,8 +306,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               width="3"
               height="1"
               rx="0.5"
-              fill="url(#paint6_linear_103_148)"
-              fillOpacity="0.66"
+              className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 34">
@@ -332,8 +324,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               width="3"
               height="1"
               rx="0.5"
-              fill="url(#paint7_linear_103_148)"
-              fillOpacity="0.66"
+              className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 35">
@@ -350,9 +341,7 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               y="47.5"
               width="9"
               height="1"
-              rx="0.5"
-              fill="url(#paint8_linear_103_148)"
-              fillOpacity="0.66"
+              rx="0.5"className={styles.bottomInfo}
             />
           </g>
           <g id="Rectangle 33">
@@ -369,21 +358,18 @@ export default function CreditCardAnimation(props: CreditCardAnimationProps) {
               y="47.5"
               width="3"
               height="1"
-              rx="0.5"
-              fill="url(#paint9_linear_103_148)"
-              fillOpacity="0.66"
+              rx="0.5"className={styles.bottomInfo}
             />
           </g>
-          <g  style={{ "--order": 3 } as React.CSSProperties} id="Rectangle 36">
+          <g style={{ "--order": 3 } as React.CSSProperties} id="Rectangle 36">
             <rect x="8.5" y="9.5" width="15" height="7" rx="1" fill="#C2C2C2" />
             <rect
+              id={styles.chip}
               x="8.5"
               y="9.5"
               width="15"
               height="7"
               rx="1"
-              fill="url(#paint10_linear_103_148)"
-              fillOpacity="0.66"
             />
           </g>
         </g>

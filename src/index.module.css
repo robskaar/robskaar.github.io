@@ -6,6 +6,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    background-color: var(--clr_secondary);
   }
   main {
     padding: 16px;
@@ -14,7 +15,7 @@
   .nav_hamburger,
   .nav_logo {
     text-decoration: none;
-    color: var(--clr_secondary);
+    color: var(--clr_text);
     cursor: alias;
   }
   .nav_logo {

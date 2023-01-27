@@ -20,6 +20,8 @@
 #v2,
 #v3 {
   opacity: 0;
+  
+  stroke: var(--clr_secondary);
   animation: blink 4s calc(var(--delay) * 100ms) ease forwards infinite;
 }
 #text {

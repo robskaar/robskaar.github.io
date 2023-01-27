@@ -15,6 +15,17 @@
 #skeleton {
   animation: fadeInDown 1s;
 }
+
+.bottomInfo {
+  filL:var(--clr_quartinary)
+}
+#backWave{
+  fill: var(--clr_tertiary);
+}
+#frontWave,
+#chip {
+  fill: var(--clr_secondary);
+}
 .svgContainer {
   width: 90%;
   height: 100%;

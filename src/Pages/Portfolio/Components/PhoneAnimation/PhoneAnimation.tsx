@@ -218,17 +218,16 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
             <g id="button">
               <rect x="14" y="79" width="27" height="8" rx="3" fill="#C2C2C2" />
               <rect
+                id={styles.buttonOverlay}
                 x="14"
                 y="79"
                 width="27"
                 height="8"
                 rx="3"
-                fill="url(#paint0_linear_1_66)"
-                fillOpacity="0.66"
               />
             </g>
             <rect
-              id="touchicon"
+              id={styles.touchIcon}
               x="25"
               y="80"
               width="6"
@@ -250,13 +249,12 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 fill="#C2C2C2"
               />
               <rect
+                id={styles.heart1}
                 x="22"
                 y="54"
                 width="5"
                 height="5"
                 rx="2.5"
-                fill="url(#paint1_linear_1_66)"
-                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -282,13 +280,12 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 fill="#C2C2C2"
               />
               <rect
+                id={styles.heart2}
                 x="43"
                 y="36"
                 width="5"
                 height="5"
                 rx="2.5"
-                fill="url(#paint2_linear_1_66)"
-                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -314,13 +311,12 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 fill="#C2C2C2"
               />
               <rect
+                id={styles.heart3}
                 x="22"
                 y="36"
                 width="5"
                 height="5"
                 rx="2.5"
-                fill="url(#paint3_linear_1_66)"
-                fillOpacity="0.66"
               />
             </g>
             <rect
@@ -346,13 +342,12 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
                 fill="#C2C2C2"
               />
               <rect
+                id={styles.heart4}
                 x="43"
                 y="54"
                 width="5"
                 height="5"
                 rx="2.5"
-                fill="url(#paint4_linear_1_66)"
-                fillOpacity="0.66"
               />
             </g>
             <rect

@@ -18,19 +18,16 @@ export default function ScrollPrompt() {
           <path
             id={styles.v3}
             d="M3 49L5 51L7 49"
-            stroke="#66c0d3"
             stroke-linecap="round"
           />
           <path
             id={styles.v3}
             d="M3 46L5 48L7 46"
-            stroke="#66c0d3"
             stroke-linecap="round"
           />
           <path
             id={styles.v3}
             d="M3 43L5 45L7 43"
-            stroke="#66c0d3"
             stroke-linecap="round"
           />
         </g>
