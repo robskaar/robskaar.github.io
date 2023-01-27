@@ -31,16 +31,44 @@ export default function HamburgerMenu(props: HamburgerMenuProps) {
         <nav className={styles.overlay_menu}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                onClick={() => {
+                  setHamburgerToggled(!hamburgerToggled);
+                }}
+                to="/"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link
+                onClick={() => {
+                  setHamburgerToggled(!hamburgerToggled);
+                }}
+                to="/portfolio"
+              >
+                Portfolio
+              </Link>
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link
+                onClick={() => {
+                  setHamburgerToggled(!hamburgerToggled);
+                }}
+                to="/"
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/">Contact</Link>
+              <Link
+                onClick={() => {
+                  setHamburgerToggled(!hamburgerToggled);
+                }}
+                to="/"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

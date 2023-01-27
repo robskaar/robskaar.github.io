@@ -1,4 +1,3 @@
-import AnimationBase from "../../../../Common/Entities/AnimationBase";
 import styles from "./PhoneAnimation.module.css";
 interface PhoneAnimationProps {}
 export default function PhoneAnimation(props: PhoneAnimationProps) {
@@ -181,7 +180,7 @@ export default function PhoneAnimation(props: PhoneAnimationProps) {
             fill="#C2C2C2"
           />
           <rect
-            id="Rectangle 5"
+            className={styles.roundButtonLeftTop}
             x="7"
             y="8"
             width="5"

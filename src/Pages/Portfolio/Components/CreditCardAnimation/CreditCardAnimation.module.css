@@ -1,63 +1,63 @@
 .text {
-    transition: fill 0.3s ease-out;
-  }
-  .text:hover {
-    fill: var(--clr_primary);
-  }
-  #overlay > g {
-    opacity: 0;
-    animation: dropIn 8s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: calc(var(--order) * 200ms);
-    animation-iteration-count: infinite;
-  }
-  #skeleton {
-    animation: fadeInDown 1s;
-  }
-  .svgContainer{
-    width: 100%;
-    height: 100%;
-  }
-  /*
+  transition: fill 0.3s ease-out;
+}
+.text:hover {
+  fill: var(--clr_primary);
+}
+#overlay > g {
+  opacity: 0;
+  animation: dropIn 8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--order) * 200ms);
+  animation-iteration-count: infinite;
+}
+#skeleton {
+  animation: fadeInDown 1s;
+}
+.svgContainer {
+  width: 90%;
+  height: 100%;
+  transform: skewX(-10deg);
+}
+/*
     ACCESIBILITY STYLES
     */
-  @media (prefers-reduced-motion: no-preference) {
-    @keyframes dropIn {
-      20% {
-        opacity: 0;
-        transform: translateY(20%);
-      }
-      30%,
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes dropIn {
+    20% {
+      opacity: 0;
+      transform: translateY(20%);
     }
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20%);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0%);
-      }
+    30%,
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-  /* BREAKPOINTS */
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-  }
-  
+}
+/* BREAKPOINTS */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
