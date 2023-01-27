@@ -1,37 +1,5 @@
 /* DEFAULT STYLES (small-medium mobile phones, 600px and down) */
 
-.indexPageWrapper {
-  display: grid;
-  height: 100%;
-  overflow: auto;
-  grid-template-rows: min-content min-content min-content min-content 1fr;
-  align-content: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.text {
-  transition: fill 0.3s ease-out;
-}
-.text:hover {
-  fill: var(--clr_primary);
-}
-.dropIn > g {
-  opacity: 0;
-  animation: dropIn 8s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: calc(var(--order) * 200ms);
-  animation-iteration-count: infinite;
-}
-.skeleton {
-  animation: fadeInDown 1s;
-}
-svg {
-  transform: scale(9);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 /*
   ACCESIBILITY STYLES
   */

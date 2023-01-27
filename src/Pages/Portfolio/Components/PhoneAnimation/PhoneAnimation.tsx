@@ -1,15 +1,10 @@
-
-
-
 import AnimationBase from "../../../../Common/Entities/AnimationBase";
 import styles from "./PhoneAnimation.module.css";
-interface PhoneAnimationProps extends AnimationBase {}
+interface PhoneAnimationProps {}
 export default function PhoneAnimation(props: PhoneAnimationProps) {
   return (
     <svg
-      style={props.style}
-      width="56"
-      height="93"
+      className={styles.svgContainer}
       viewBox="0 0 56 93"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

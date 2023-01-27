@@ -1,0 +1,47 @@
+.svgContainer {
+  width: 30px;
+  height: 150px;
+}
+#v1 {
+  --delay: 1;
+}
+#v2 {
+  --delay: 2;
+}
+#v3 {
+  --delay: 3;
+}
+#v1:hover,
+#v2:hover,
+#v3:hover {
+  stroke: var(--clr_secondary);
+}
+#v1,
+#v2,
+#v3 {
+  opacity: 0;
+  animation: blink 4s calc(var(--delay) * 100ms) ease forwards infinite;
+}
+#text {
+  animation: fade-in 1s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  20% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  30%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

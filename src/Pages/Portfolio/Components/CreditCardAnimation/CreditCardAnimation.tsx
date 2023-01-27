@@ -1,12 +1,10 @@
 import AnimationBase from "../../../../Common/Entities/AnimationBase";
 import styles from "./CreditCardAnimation.module.css";
-interface CreditCardAnimationProps extends AnimationBase {}
+interface CreditCardAnimationProps {}
 export default function CreditCardAnimation(props: CreditCardAnimationProps) {
   return (
     <svg
-      style={props.style}
-      width="92"
-      height="54"
+    className={styles.svgContainer}
       viewBox="0 0 92 54"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
