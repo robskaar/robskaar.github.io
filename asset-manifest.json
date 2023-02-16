@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8bcd6dc.css",
-    "main.js": "/static/js/main.882f2443.js",
+    "main.css": "/static/css/main.a9936a1f.css",
+    "main.js": "/static/js/main.a036f910.js",
     "static/media/Rancho-Regular.ttf": "/static/media/Rancho-Regular.3570bfe74a87405d74f3.ttf",
     "index.html": "/index.html",
-    "main.d8bcd6dc.css.map": "/static/css/main.d8bcd6dc.css.map",
-    "main.882f2443.js.map": "/static/js/main.882f2443.js.map"
+    "main.a9936a1f.css.map": "/static/css/main.a9936a1f.css.map",
+    "main.a036f910.js.map": "/static/js/main.a036f910.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8bcd6dc.css",
-    "static/js/main.882f2443.js"
+    "static/css/main.a9936a1f.css",
+    "static/js/main.a036f910.js"
   ]
 }
