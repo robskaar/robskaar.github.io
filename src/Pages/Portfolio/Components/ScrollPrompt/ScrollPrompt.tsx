@@ -1,6 +1,9 @@
 import styles from "./ScrollPrompt.module.css";
 
-export default function ScrollPrompt() {
+interface ScrollPromptProps {
+  scrollToId: string;
+}
+export default function ScrollPrompt(props: ScrollPromptProps) {
   return (
     <svg
       className={styles.svgContainer}
@@ -10,26 +13,14 @@ export default function ScrollPrompt() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       onClick={() => {
-        document.getElementById("#phone")?.scrollIntoView();
+        document.getElementById(props.scrollToId)?.scrollIntoView();
       }}
     >
       <g id="ScrollPrompt">
         <g id="arrow">
-          <path
-            id={styles.v3}
-            d="M3 49L5 51L7 49"
-            stroke-linecap="round"
-          />
-          <path
-            id={styles.v3}
-            d="M3 46L5 48L7 46"
-            stroke-linecap="round"
-          />
-          <path
-            id={styles.v3}
-            d="M3 43L5 45L7 43"
-            stroke-linecap="round"
-          />
+          <path id={styles.v3} d="M3 49L5 51L7 49" stroke-linecap="round" />
+          <path id={styles.v3} d="M3 46L5 48L7 46" stroke-linecap="round" />
+          <path id={styles.v3} d="M3 43L5 45L7 43" stroke-linecap="round" />
         </g>
         <g id={styles.text}>
           <path

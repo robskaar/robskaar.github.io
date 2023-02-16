@@ -153,7 +153,6 @@ h5,
 h6 {
   color: var(--clr_secondary);
   padding: 4px;
-  width: max-content;
   border-radius: 3px;
   background-color: var(--clr_quartinary);
 }
@@ -232,7 +231,7 @@ code {
 
   */
 
-  --clr_primary: #5CDB95;
+  --clr_primary: #5cdb95;
   --clr_secondary: #05386b;
   --clr_tertiary: #379683;
   --clr_quartinary: #8ee4af;
@@ -366,5 +365,8 @@ body,
   height: 100%;
   background: var(--clr_primary);
   color: var(--clr_text);
+  overflow: hidden;
+}
+main {
   overflow: hidden;
 }
